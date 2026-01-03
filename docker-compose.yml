@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mkdocs:
+    build: .
+    image: mkdocs-env
+    container_name: mkdocs-server
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount current directory to /docs in container
+      - ./:/docs
+    # Override default command if needed
+    # command: mkdocs serve --dev-addr=0.0.0.0:8000
+    restart: unless-stopped

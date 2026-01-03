@@ -1,0 +1,56 @@
+# Example MkDocs configuration file
+# This is a sample configuration to demonstrate the Docker environment
+
+site_name: My Documentation
+site_description: Documentation powered by MkDocs in Docker
+site_author: Your Name
+
+# Repository information
+repo_name: tabee/workbooks
+repo_url: https://github.com/tabee/workbooks
+
+# Theme configuration
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Documentation structure
+nav:
+  - Home: index.md
+  - About: about.md
