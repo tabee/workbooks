@@ -24,7 +24,44 @@ All package versions are automatically managed via `requirements.txt`.
 docker build -t mkdocs-env .
 ```
 
+Or using the Makefile:
+
+```bash
+make build
+```
+
+### Testing the Setup
+
+Run the automated test script to verify everything works:
+
+```bash
+./test-docker.sh
+# Or using make
+make test
+```
+
+This will build the image, create a test project, and verify the documentation builds correctly.
+
 ## Running the Container
+
+### Using Makefile (Recommended)
+
+```bash
+# Serve documentation
+make serve
+
+# Build static site
+make build-docs
+
+# Create new project
+make new PROJECT=my-docs
+
+# Open shell in container
+make shell
+
+# See all commands
+make help
+```
 
 ### For a single project
 

@@ -16,4 +16,16 @@ Run MkDocs server:
 docker run -it --rm -p 8000:8000 -v $(pwd):/docs mkdocs-env
 ```
 
+### Using Makefile (Recommended)
+
+For convenience, use the included Makefile:
+
+```bash
+make build    # Build the Docker image
+make serve    # Run MkDocs server
+make help     # Show all available commands
+```
+
+### Documentation
+
 For detailed documentation, see [DOCKER.md](DOCKER.md).
