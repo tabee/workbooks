@@ -1,6 +1,5 @@
 mkdocs
 mkdocs-material
-mkdocs-material-extensions
 mkdocs-minify-plugin
 mkdocs-redirects
 mkdocs-git-revision-date-localized-plugin

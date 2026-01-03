@@ -20,8 +20,5 @@ RUN pip install --no-cache-dir -r /tmp/requirements.txt && \
 # Expose MkDocs default port
 EXPOSE 8000
 
-# Create a directory for multiple projects
-RUN mkdir -p /docs
-
 # Set default command to serve MkDocs
 CMD ["mkdocs", "serve", "--dev-addr=0.0.0.0:8000"]
