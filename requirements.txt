@@ -1,0 +1,11 @@
+mkdocs
+mkdocs-material
+mkdocs-material-extensions
+mkdocs-minify-plugin
+mkdocs-redirects
+mkdocs-git-revision-date-localized-plugin
+mkdocs-awesome-pages-plugin
+mkdocs-macros-plugin
+pymdown-extensions
+markdown-include
+mkdocs-monorepo-plugin
